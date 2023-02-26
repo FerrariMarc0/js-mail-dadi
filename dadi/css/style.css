@@ -1,0 +1,115 @@
+/******************
+        RESET
+*******************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://media-assets.wired.it/photos/61fbf2bb84696748f543f010/master/pass/pexels-pixabay-278918.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/******************
+        MAIN
+*******************/
+.container{
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.player, .com{
+    height: 31.25rem;
+    width: 31.25rem;
+    background-image: url(http://ilvideogioco.files.wordpress.com/2011/05/luigi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.com{
+    background-image: url(https://cdn.pixabay.com/photo/2016/07/30/21/37/mario-1558062_960_720.jpg);
+    border-top-right-radius: .625rem;
+    border-bottom-right-radius: .625rem;
+}
+.game{
+    width: 43.75rem;
+    height: 31.25rem;
+    background-color: rgba(0, 200, 0, 0.4);
+    padding: 0 1.25rem;
+}
+
+button{
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 6.25rem;
+    width: 6.25rem;
+    margin: 3.125rem 12.5rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: gold;
+    border-color: gold;
+}
+.section{
+    height: 4.0625rem;
+    border-top: .0625rem solid;
+}
+.recap, .section{
+    display: flex;
+    justify-content: space-between;
+}
+.final{
+    height: 37.5rem;
+    margin: 3.125rem auto;
+    color: rgba(200, 0, 0, 0.8);
+    text-decoration: underline;
+}
+.dice{
+    height: 1.875rem;
+    width: 1.875rem;
+    border: .125rem solid;
+    text-align: center;
+    line-height: 1.5625rem;
+    background-color: #ffffff;
+    margin-top: .625rem;
+    color: red;
+    font-weight: 600;
+}
+/******************
+        typo
+*******************/
+.player{
+    border-top-left-radius: .625rem;
+    border-bottom-left-radius: .625rem;
+}
+.final h1{
+    font-size: 3.75rem;
+}
+.game h1:first-of-type{
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+}
+span{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: gold;
+    font-weight: 600;
+}
+.section span{
+    line-height: 3.125rem;
+}
+#user{
+    margin-left: 1.875rem;
+    
+}
+#computer{
+    margin-right: 1.875rem;
+}
