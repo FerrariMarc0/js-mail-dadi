@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Mail</title>
 </head>
 <body>
+    <div class="container">
+        <h2>Accedi</h2>
+        <span>Continua su Boomail</span>
+        <form action="get">
+            <label for="mail"></label>
+            <input type="email" name="mail" id="inputmail" placeholder=" Indirizzo email" required>
+        </form>
+        <span id="negative" class="error">! Inserisci un indirizzo email valido</span>
+        <a href="#" id="list">Non ricordi l'indirizzo email? Scegli dai salvati in precenza <span>"CLICCA QUI"</span></a>
+        <div class="list_box selection" id="select">
+            <ul>
+                <li>alberto@gmail.com</li>
+                <li>vittoria@live.it</li>
+                <li>agatino@outlook.com</li>
+                <li>gaetano@protonmail.com</li>
+                <li>Eugenia@libero.it</li>
+                <li>giulia@gmail.com</li>
+                <li>giovanni@yahoo.com</li>
+                <li>rosa@email.it</li>
+                <li>taniot@gmx.com</li>
+                <li>alex@live.it</li>
+                <li>gae@outlook.com</li>
+                <li>cribbio@outlook.com</li>
+              </ul>
+        </div>
+      
+        <span>Non si tratta del tuo computer? Utilizza la modalità ospite per accedere privatamente. <a href="#">scopri di piu</a></span>
+        <div class="container_end">
+            <a href="#">Crea un account</a>
+            <button id="go" type="button">Avanti</button>
+        </div>
+    </div>
+    
     <script src="js/main.js"></script>
+    
 </body>
 </html>

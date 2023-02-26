@@ -1,4 +1,3 @@
-
 'use strict';
 
 const casualMail= [
@@ -16,20 +15,36 @@ const casualMail= [
     'cribbio@outlook.com'
 ]
 
-const userMail= prompt('Ineririsci la tua email:');
+const userMail= document.getElementById('inputmail');
+const button= document.getElementById('go');
+const alErt= document.getElementById('negative');
+const userList= document.getElementById('select');
+const openList= document.getElementById('list');
 let result= false;
 
-for( let i = 0; i < casualMail.length; i++){
+openList.addEventListener('click',
+function(){
+    userList.classList.toggle('selection');
+})
     
-    if(casualMail[i] === userMail){
+button.addEventListener('click',
+function(){
+
+    const userMailValue = userMail.value;
+    
+for( let i = 0; i < casualMail.length; i++){
+
+    if(casualMail[i] === userMailValue){
         result = true;
     }
 }
 
 if(result === true){
-    console.log('La mail inserita è corretta!')
-    alert('La mail inserita è corretta!')
+    console.log("LA MAIL INSERITA E' CORRETTA!");
+    alert("LA MAIL INSERITA E' CORRETTA!");
 } else{
-    console.log('Spiacente, la mail inserita non corrisponde, riprova.')
-    alert('Spiacente, la mail inserita non corrisponde, riprova.');
+    console.log('SPIACENTE, LA MAIL INSERITA NON CORRISPONDE');
+    alErt.classList.toggle('error');
 }
+})
+
